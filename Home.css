@@ -1,0 +1,53 @@
+body {
+    /*background-color: #284B63;*/
+    margin:0;
+}
+
+#particles-js{
+    background:#284B63 ;
+    height:800px;
+
+}
+
+#test{
+    position:absolute;
+    left: 50%;
+    margin-left: -200px
+}
+
+
+html *{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.navbar{
+    font-size: 2em;
+}
+
+
+#profile-pic{
+    /*display: block;*/
+    /*margin: auto;*/
+    border-radius:50%;
+    padding: 40px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: #CFB1B7;
+    font-weight: bold;
+}
+
+
+.container{
+    color: white;
+}
+
+
+
