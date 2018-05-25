@@ -20,10 +20,9 @@
             crossorigin="anonymous"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="typed.min.js"></script>
+
     <link rel="stylesheet" href="Home.css">
 
 </head>
@@ -43,14 +42,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Portfolio</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="skills.html">Skills</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Experience</a>
@@ -60,6 +59,10 @@
             </li>
         </ul>
 
+        <ul class = navbar-nav>
+            <li id = "update">(Note : - Website is currently under an update)</li>
+        </ul>
+
     </div>
 </nav>
 
@@ -67,29 +70,47 @@
 
 <!-- Start of about me Section -->
 
-<!-- End of about me Section -->
 
-
+<!-- Start of particles division -->
 <div id="particles-js">
 
-<div id ="test">
+    <div id="homepage">
 
-    <img id="profile-pic" src="images/My%20Picture%20.png">
+        <!-- Profile pic -->
+        <img id="profile-pic" src="images/My%20Picture%20.png">
 
-    <h1> Pranav</h1>
-    <h1> Bheemsetty</h1>
-
-    <h2 class="type"></h2>
-    <script type="text/javascript" src="typed.min.js"></script>
-
+        <!-- Name -->
+        <h1>Pranav</h1>
+        <h1>Bheemsetty</h1>
 
 
+        <!-- Typed - js elements -->
+        <div id="typed-strings">
+            <p>King's College London</p>
+            <p>CompSci Undergraduate</p>
+            <p>Full Stack Developer</p>
+        </div>
+        <span id="typed"></span>
+
+    </div>
 </div>
-</div>
+<!-- End of particles division -->
 
+
+<!-- Typed-js configuration -->
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        loop: true,
+        typeSpeed: 70,
+        backSpeed: 70
+    });
+</script>
+
+
+<!-- Start Particles js scripts -->
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
 <script>
 
     particlesJS.load('particles-js', 'particles.json', function () {
@@ -97,6 +118,34 @@
     });
 
 </script>
+<!-- End of Particles js scripts -->
+
+
+<!-- End of about me Section -->
+
+
+<div class="container-fluid">
+
+    <div class="container">
+
+        <div class="footer-page">
+            <br>
+            <hr/>
+           <a href = "mailto:pranav.bheemsetty@kcl.ac.uk"> <i class="fas fa-envelope"></i></a>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-facebook"></i>
+            <br>
+            <hr/>
+            <p>Copyright <i class="far fa-copyright"></i>2018 Pranav Bheemsetty. All rights reserved</p>
+            <br>
+        </div>
+
+
+    </div>
+</div>
+
+
 
 
 </body>

@@ -1,12 +1,20 @@
 body {
-    /*background-color: #284B63;*/
     margin:0;
     min-height: 100%;
+
 }
 
 html{
     height: 100%;
 }
+
+/**{ border: 0.01px solid red; }*/
+
+#update{
+   color: white;
+    font-size: 15px;
+}
+
 
 #particles-js{
     background:#284B63 ;
@@ -14,12 +22,27 @@ html{
 
 }
 
-#test{
+#homepage{
     position:absolute;
     left: 50%;
-    margin-left: -200px
+    margin-left: -220px;
+    font-size: 1.2em;
+
 }
 
+.typed-cursor {
+    font-size: 30px;
+}
+
+
+#typed{
+    color: white;
+    font-size: 2em;
+}
+
+.typed-cursor{
+    font-size:1.2em;
+}
 
 html *{
     font-family: 'Raleway', sans-serif;
@@ -27,21 +50,15 @@ html *{
 }
 
 .navbar{
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 
 #profile-pic{
-    /*display: block;*/
-    /*margin: auto;*/
     border-radius:50%;
     padding: 40px;
 }
 
-h2{
-    text-align: center;
-    color: white;
-}
 
 h1{
     text-align: center;
@@ -50,9 +67,43 @@ h1{
 }
 
 
-.container{
+.container-fluid{
+    background: rgb(52,58,64);
+}
+
+.footer-page{
+    text-align: center;
     color: white;
 }
 
 
+.fab,.fas{
+    padding: 3px;
 
+}
+
+.fa-github{
+   font-size:  3em;
+    color: #CFB1B7;
+}
+
+.fa-facebook{
+    font-size: 3em;
+    color: #CFB1B7;
+}
+
+.fa-envelope{
+    font-size:3em;
+    color:#CFB1B7;
+}
+
+.fa-linkedin{
+    font-size: 3em;
+    color:#CFB1B7;
+}
+
+
+hr{
+    border: 1px solid #ccc;
+
+}
