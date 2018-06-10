@@ -21,7 +21,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="typed.min.js"></script>
+    <script type="text/javascript" src="typed.js"></script>
 
     <link rel="stylesheet" href="Home.css">
 
@@ -55,7 +55,7 @@
                 <a class="nav-link" href="#">Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="https://pranavbheemsetty.typeform.com/to/ttyZrq">Contact</a>
             </li>
         </ul>
 
@@ -79,9 +79,14 @@
         <!-- Profile pic -->
         <img id="profile-pic" src="images/My%20Picture%20.png">
 
+
         <!-- Name -->
-        <h1>Pranav</h1>
-        <h1>Bheemsetty</h1>
+
+            <h1>Pranav
+            <br>
+                Bheemsetty
+            </h1>
+
 
 
         <!-- Typed - js elements -->
@@ -89,12 +94,47 @@
             <p>King's College London</p>
             <p>CompSci Undergraduate</p>
             <p>Full Stack Developer</p>
+            <p>Blockchain Enthusiast</p>
         </div>
         <span id="typed"></span>
 
+        <div class = "container">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fas fa-info-circle"></i> About me
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">About me</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Currently an undergarduate student studying <strong>"Computer Science with Management"</strong> at King's College London.</p>
+                            <p>Plan to make this website as a primary resource of what I have achieved over the course of time.</p>
+
+                            Stay tuned !
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
+
 </div>
 <!-- End of particles division -->
+
 
 
 <!-- Typed-js configuration -->
@@ -103,9 +143,14 @@
         stringsElement: '#typed-strings',
         loop: true,
         typeSpeed: 70,
-        backSpeed: 70
+        backSpeed: 70,
+        cursorChar: '|'
+
+
     });
 </script>
+
+
 
 
 <!-- Start Particles js scripts -->
@@ -122,6 +167,10 @@
 
 
 <!-- End of about me Section -->
+
+<!--<button type="button" class="btn btn-outline-danger">Danger</button>-->
+
+
 
 
 <div class="container-fluid">
