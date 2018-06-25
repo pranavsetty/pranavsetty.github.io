@@ -2,6 +2,7 @@ body {
     margin:0;
     min-height: 100%;
     background: lightgray;
+    position: relative;
 
 }
 
@@ -19,11 +20,9 @@ html{
 
 
 #particles-js{
-    /*background-image: url("");*/
     background: rgb(36,66,88);
     background-size:cover;
-
-    height:700px;
+    height:900px;
 
 }
 
@@ -72,6 +71,7 @@ html *{
     border-radius:50%;
     padding: 40px;
     /*margin:auto;*/
+    margin-top: 75px;
 }
 
 
@@ -80,6 +80,7 @@ h1{
     color: #CFB1B7;
     font-weight: bold;
     display: block;
+    padding:10px;
 }
 
 
@@ -160,8 +161,23 @@ hr{
 }
 
 .skills{
-    padding: 20px;
+    padding: 75px;
     background: #2E282A;
+
+}
+
+h2{
+    text-align: center;
+    color:#CFB1B7;
+}
+h4{
+    text-align: center;
+}
+
+.tf{
+    background-color: white;
+    padding: 5px;
+
 }
 /* End of skills section */
 
@@ -172,16 +188,21 @@ hr{
 /* Start of Experience section */
 .experience{
     background: lightgray;
+    padding: 5px;
 }
 
-#wd-header{
+.we-header{
     color: black;
     margin: 10px;
 }
 
 .card-img-top {
     /*background: lightblue;*/
-    padding: 15px;
+}
+.card{
+
+    margin: 10px auto;
+
 }
 
 .btn-danger{
@@ -193,3 +214,5 @@ hr{
 
 /* End of Experience section */
 
+
+/**{ border: 0.1px solid red; }*/
