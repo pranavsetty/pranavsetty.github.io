@@ -20,7 +20,8 @@ html{
 
 
 #particles-js{
-    background: rgb(36,66,88);
+    /*background: rgb(36,66,88);*/
+    background-image: url("images/blur-business-chart-159888.jpg") ;
     background-size:cover;
     height:900px;
 
@@ -201,7 +202,7 @@ h4{
 }
 .card{
 
-    margin: 10px auto;
+    margin: 15px auto;
 
 }
 
