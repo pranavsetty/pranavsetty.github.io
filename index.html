@@ -25,6 +25,19 @@
 
     <link rel="stylesheet" href="Home.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121437908-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('set', {'user_id': 'USER_ID'});
+        ga('set', 'userId', 'USER_ID');
+
+        gtag('config', 'UA-121437908-1');
+    </script>
+
+
 </head>
 <body>
 
@@ -54,14 +67,30 @@
             <li class="nav-item">
                 <a class="nav-link" href="#e1">Experience</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://pranavbheemsetty.typeform.com/to/ttyZrq">Contact</a>
-            </li>
+
         </ul>
 
-        <!--<ul class=navbar-nav>-->
+        <ul class=navbar-nav>
         <!--<li id="update">(Note : - Website is currently under an update)</li>-->
-        <!--</ul>-->
+            <li class="nav-item">
+                <!--<a class="nav-link" href="https://pranavbheemsetty.typeform.com/to/ttyZrq">Contact</a>-->
+                <a class="nav-link typeform-share button contactB" href="https://pranavbheemsetty.typeform.com/to/ttyZrq"
+                   data-mode="popup"
+                   style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin-top:7px;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+                   data-submit-close-delay="5" target="_blank">Contact Me </a>
+                <script> (function () {
+                    var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement,
+                        gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/";
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })() </script>
+            </li>
+        </ul>
 
     </div>
 </nav>
@@ -384,31 +413,45 @@
 
 <!-- Start of Experience section -->
 
-<h1 id="w1" class="b-header">Experience</h1>
+<h1 id="e1" class="b-header">Experience</h1>
+
+<div class="container tf">
+
+    <ul>
+        <h5>Awards :- </h5>
+        <li>King's Experience London Award (2018)
+        </li>
+        <li>King's Enterprise Award (2018)
+        </li>
+        <li>King's Leadership & Professional Skills Award (2018)</li>
+    </ul>
+
+</div>
+
 <div class="accordion" id="accordion">
     <div class="card">
         <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                    UBS ( Spring Week Intern )
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                    UBS ( Spring Week Intern ) <i class="fas fa-sort-down"></i>
                 </button>
             </h5>
         </div>
-
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
                 <p>• Learnt about the main operations performed by UBS AG and shadowed business managers.</p>
                 <p>• Received industry specific knowledge , soft skills training and network building opportunities.</p>
             </div>
         </div>
     </div>
+
     <div class="card">
         <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                         aria-expanded="false" aria-controls="collapseTwo">
-                    KCL BLOCKCHAIN ( Research Analyst )
+                    KCL BLOCKCHAIN ( Research Analyst ) <i class="fas fa-sort-down"></i>
                 </button>
             </h5>
         </div>
@@ -426,7 +469,7 @@
             <h5 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
                         aria-expanded="false" aria-controls="collapseThree">
-                    WHOOMIES ( Brand Ambassador )
+                    WHOOMIES ( Brand Ambassador ) <i class="fas fa-sort-down"></i>
                 </button>
             </h5>
         </div>
@@ -440,11 +483,34 @@
     </div>
 
     <div class="card">
+        <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFour">
+                    CAPGEMINI ( Student Consultant ) <i class="fas fa-sort-down"></i>
+                </button>
+            </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+                <p>• Represented King’s College London for the Capgemini Consulting Cup (an inter-university
+                    competition).</p>
+
+                <p>• Was given the necessary training to think and act as a management consultant in a competitive team
+                    based environment.</p>
+
+                <p>• Solved a business problem challenge with the help of case-solving frameworks over a period of 3
+                    weeks.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
         <div class="card-header" id="headingFour">
             <h5 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
                         aria-expanded="false" aria-controls="collapseFour">
-                    FIZZ ( Product Design Intern )
+                    FIZZ ( Product Design Intern ) <i class="fas fa-sort-down"></i>
                 </button>
             </h5>
         </div>
@@ -463,6 +529,8 @@
             </div>
         </div>
     </div>
+
+
 </div>
 
 <!-- End of Experience section -->
@@ -476,9 +544,9 @@
             <br>
             <hr/>
             <a href="mailto:pranav.bheemsetty@kcl.ac.uk"> <i class="fas fa-envelope"></i></a>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-facebook"></i>
+            <a href="uk.linkedin.com/in/pranavsetty"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/pranavsetty"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/pranav.setty"><i class="fab fa-facebook"></i></a>
             <br>
             <hr/>
             <p>Copyright <i class="far fa-copyright"></i>2018 Pranav Bheemsetty. All rights reserved</p>

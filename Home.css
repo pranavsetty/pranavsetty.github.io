@@ -185,7 +185,12 @@ h4{
 .tf{
     background-color: white;
     padding: 5px;
+    margin-bottom: 25px;
 
+}
+
+.progress-bar{
+    font-size: 1.6em;
 }
 /* End of skills section */
 
@@ -197,6 +202,7 @@ h4{
 .experience{
     background: lightgray;
     padding: 5px;
+
 }
 
 .b-header{
@@ -210,7 +216,9 @@ h4{
     font-weight:bold;
 }
 
-
+.contactB{
+    margin-top: 5px;
+}
 
 /* End of Experience section */
 
