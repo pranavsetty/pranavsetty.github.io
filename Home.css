@@ -133,6 +133,22 @@ hr{
 }
 
 /*  Start of Projects section */
+
+
+/*.card-img-top{*/
+    /*height: 20rem;*/
+/*}*/
+
+.card1{
+    min-height: 600px;
+}
+
+.gif{
+    height: 310px;
+    width: 225px;
+    margin: 15px auto ;
+}
+
 .projects{
     /*margin: 4px;*/
     /*margin: auto;*/
@@ -161,6 +177,15 @@ hr{
 
 
 }
+
+.card-title{
+    margin-top: 25px;
+}
+
+.card-text{
+    margin-top: 25px;
+}
+
 
 /*  End of Projects section */
 
