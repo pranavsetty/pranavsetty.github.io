@@ -44,7 +44,6 @@
     <link rel="stylesheet" href="aos.css">
     <script src="aos.js"></script>
 
-
 </head>
 <body>
 
@@ -224,16 +223,75 @@
 
         <h1 id="p1" class="section-header"> Portfolio </h1>
 
+        <script>
+            $(document).ready(function(){
+
+                $(".all").click(function(){
+                    $(".appDesignsCard").show();
+                    $(".websitesCard").show();
+                    $(".gamesCard").show();
+                    $(".guiCard").show();
+                    $(".otherCard").show();
+                });
+
+
+                $(".appDesigns").click(function(){
+                    $(".appDesignsCard").show();
+                    $(".websitesCard").hide();
+                    $(".gamesCard").hide();
+                    $(".guiCard").hide();
+                    $(".otherCard").hide();
+                });
+
+
+
+
+
+            });
+        </script>
+
+
+
+        <!--<p>If you click on the "Hide" button, I will disappear.</p>-->
+        <!--<button id="show">Show</button>-->
+        <!--<button id="hide">Hide</button>-->
+
+        <div class = "categories">
+            <button type="button"  class="btn btn-danger all">All</button>
+            <button type="button"  class="btn btn-danger appDesigns">App Designs</button>
+
+            <button type="button"  class="btn btn-danger websites">Websites</button>
+            <button type="button" class="btn btn-danger">Games</button>
+            <button type="button" class="btn btn-danger">GUI / Simulation</button>
+            <button type="button" class="btn btn-danger">Other</button>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--<div class="card cardss" id="card-test" style="width: 18rem;">-->
+            <!--<img src="..." class="card-img-top" alt="...">-->
+            <!--<div class="card-body">-->
+                <!--<h5 class="card-title">Card title</h5>-->
+                <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+            <!--</div>-->
+        <!--</div>-->
+
 
         <div class="row">
-
 
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 
 
                 <div data-aos="fade-up-right">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 appDesignsCard" style="width: 30rem;">
                         <img class="card-img-top gif" src="images/StrArt.gif" alt="Card image cap">
 
                         <div class="card-body">
@@ -260,7 +318,7 @@
 
                 <div data-aos="fade-up">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 otherCard" style="width: 30rem;">
                         <img class="card-img-top" src="images/XYEZ.png" alt="Card image cap">
 
                         <div class="card-body">
@@ -285,7 +343,7 @@
 
                 <div data-aos="fade-up-right">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 websitesCard" style="width: 30rem;">
                         <img class="card-img-top" src="images/gameSoc.gif" alt="Card image cap">
 
                         <div class="card-body">
@@ -315,7 +373,7 @@
 
                 <div data-aos="fade-up">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 gamesCard" style="width: 30rem;">
                         <img class="card-img-top" src="images/toguzKorgool.gif" alt="Card image cap">
 
                         <div class="card-body">
@@ -341,7 +399,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 
                 <div data-aos="fade-up-right">
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 websitesCard" style="width: 30rem;">
                         <div class="card-body">
                             <img class="card-img-top" src="images/Blockchain%20-%20Website.png" alt="Card image cap">
 
@@ -352,7 +410,7 @@
 
                             <p>• Aim to make it a fundamental resource for University students in London</p>
 
-                            <a href="https://www.kclblockchain.com/" class="card-link"> Link</a>
+                            <a href="https://www.pranavbheemsetty.com/KCL-Blockchain-Website1/" class="card-link"> Link</a>
                         </div>
                     </div>
                 </div>
@@ -363,7 +421,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div data-aos="fade-up">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 gamesCard" style="width: 30rem;">
                         <div class="card-body">
                             <img class="card-img-top" src="images/Gladiators.png" alt="Card image cap">
 
@@ -386,7 +444,7 @@
 
                 <div data-aos="fade-up-right">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 guiCard" style="width: 30rem;">
                         <div class="card-body">
                             <img class="card-img-top" src="images/Simulation.jpg" alt="Card image cap">
 
@@ -412,7 +470,7 @@
 
                 <div data-aos="fade-up">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 guiCard" style="width: 30rem;">
                         <div class="card-body">
                             <img class="card-img-top" src="images/Property-Marketplace.png" alt="Card image cap">
 
@@ -438,7 +496,7 @@
 
                 <div data-aos="fade-up-right">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 otherCard" style="width: 30rem;">
                         <div class="card-body">
                             <img class="card-img-top" src="images/Smart-Contract.png" alt="Card image cap">
 
@@ -460,7 +518,7 @@
 
                 <div data-aos="fade-up">
 
-                    <div class="card card1" style="width: 30rem;">
+                    <div class="card card1 websitesCard" style="width: 30rem;">
                         <div class="card-body">
                             <img class="card-img-top" src="images/Beauty%20Saloon.png" alt="Card image cap">
 
