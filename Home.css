@@ -164,9 +164,13 @@ hr{
     margin: 15px auto ;
 }
 
-.projects{
+.pcontainer{
     /*margin: 4px;*/
     /*margin: auto;*/
+    background-image: url("images/keybaordBackground.jpg") ;
+    background-attachment: fixed;
+
+
 }
 
 
@@ -189,6 +193,7 @@ hr{
 
     margin: 15px auto;
     box-shadow: 10px 10px 5px grey;
+
 
 
 }

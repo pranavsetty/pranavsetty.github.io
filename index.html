@@ -216,83 +216,90 @@
 
 </script>
 
+<script src="jquery-2.0.2.js"></script>
+<script src="jquery.stellar.min.js"></script>
+<script>
+    $.stellar();
+</script>
 
-<div class="container">
 
-    <div class="projects">
+<div class="pcontainer"  >
+    <div class="container ">
 
-        <h1 id="p1" class="section-header"> Portfolio </h1>
+        <div class="projects">
 
-        <script>
-            $(document).ready(function () {
+            <h1 id="p1" class="section-header"> Portfolio </h1>
 
-                $(".all").click(function () {
-                    $(".appDesignsCard").show();
-                    $(".websitesCard").show();
-                    $(".gamesCard").show();
-                    $(".guiCards").show();
-                    $(".othersCard").show();
+            <script>
+                $(document).ready(function () {
+
+                    $(".all").click(function () {
+                        $(".appDesignsCard").show();
+                        $(".websitesCard").show();
+                        $(".gamesCard").show();
+                        $(".guiCards").show();
+                        $(".othersCard").show();
+                    });
+
+
+                    $(".appDesigns").click(function () {
+                        $(".appDesignsCard").show();
+                        $(".websitesCard").hide();
+                        $(".gamesCard").hide();
+                        $(".guiCards").hide();
+                        $(".othersCard").hide();
+                    });
+
+                    $(".websites").click(function () {
+                        $(".websitesCard").show();
+                        $(".appDesignsCard").hide();
+                        $(".gamesCard").hide();
+                        $(".guiCards").hide();
+                        $(".othersCard").hide();
+                    });
+
+                    $(".games").click(function () {
+                        $(".gamesCard").show();
+                        $(".websitesCard").hide();
+                        $(".appDesignsCard").hide();
+                        $(".guiCards").hide();
+                        $(".othersCard").hide();
+                    });
+
+                    $(".gui").click(function () {
+                        $(".guiCards").show();
+                        $(".gamesCard").hide();
+                        $(".websitesCard").hide();
+                        $(".appDesignsCard").hide();
+                        $(".othersCard").hide();
+                    });
+
+                    $(".others").click(function () {
+                        $(".othersCard").show();
+                        $(".gamesCard").hide();
+                        $(".websitesCard").hide();
+                        $(".appDesignsCard").hide();
+                        $(".guiCards").hide();
+                    });
                 });
+            </script>
 
 
-                $(".appDesigns").click(function () {
-                    $(".appDesignsCard").show();
-                    $(".websitesCard").hide();
-                    $(".gamesCard").hide();
-                    $(".guiCards").hide();
-                    $(".othersCard").hide();
-                });
+            <div class="categories">
+                <button type="button" class="btn btn-danger  btn-lg all">All</button>
+                <button type="button" class="btn btn-danger  appDesigns">App Designs</button>
 
-                $(".websites").click(function () {
-                    $(".websitesCard").show();
-                    $(".appDesignsCard").hide();
-                    $(".gamesCard").hide();
-                    $(".guiCards").hide();
-                    $(".othersCard").hide();
-                });
-
-                $(".games").click(function () {
-                    $(".gamesCard").show();
-                    $(".websitesCard").hide();
-                    $(".appDesignsCard").hide();
-                    $(".guiCards").hide();
-                    $(".othersCard").hide();
-                });
-
-                $(".gui").click(function () {
-                    $(".guiCards").show();
-                    $(".gamesCard").hide();
-                    $(".websitesCard").hide();
-                    $(".appDesignsCard").hide();
-                    $(".othersCard").hide();
-                });
-
-                $(".others").click(function () {
-                    $(".othersCard").show();
-                    $(".gamesCard").hide();
-                    $(".websitesCard").hide();
-                    $(".appDesignsCard").hide();
-                    $(".guiCards").hide();
-                });
-            });
-        </script>
+                <button type="button" class="btn btn-danger btn-lg  websites ">Websites</button>
+                <button type="button" class="btn btn-danger btn-lg games ">Games</button>
+                <button type="button" class="btn btn-danger btn-lg gui ">GUI / Simulation</button>
+                <button type="button" class="btn btn-danger btn-lg others ">Other</button>
+            </div>
 
 
-        <div class="categories">
-            <button type="button" class="btn btn-danger  btn-lg all">All</button>
-            <button type="button" class="btn btn-danger  appDesigns">App Designs</button>
+            <div class="testRow">
+                <!--<div data-aos="flip-up">-->
 
-            <button type="button" class="btn btn-danger btn-lg  websites ">Websites</button>
-            <button type="button" class="btn btn-danger btn-lg games ">Games</button>
-            <button type="button" class="btn btn-danger btn-lg gui ">GUI / Simulation</button>
-            <button type="button" class="btn btn-danger btn-lg others ">Other</button>
-        </div>
-
-
-        <div class="testRow">
-            <!--<div data-aos="flip-up">-->
-
-                <div class="card card1 appDesignsCard" style="width: 30rem;">
+                <div class="card card1 appDesignsCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <img class="card-img-top gif" src="images/StrArt.gif" alt="Card image cap">
 
                     <div class="card-body">
@@ -309,12 +316,12 @@
                            class="card-link">Link</a>
                     </div>
                 </div>
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 othersCard" style="width: 30rem;">
+                <div class="card card1 othersCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <img class="card-img-top" src="images/XYEZ.png" alt="Card image cap">
 
                     <div class="card-body">
@@ -330,12 +337,12 @@
                         <a href="https://www.pranavbheemsetty.com/XYEZ/" class="card-link">Link</a>
                     </div>
                 </div>
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 websitesCard" style="width: 30rem;">
+                <div class="card card1 websitesCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <img class="card-img-top" src="images/gameSoc.gif" alt="Card image cap">
 
                     <div class="card-body">
@@ -355,12 +362,12 @@
 
                     </div>
                 </div>
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 gamesCard" style="width: 30rem;">
+                <div class="card card1 gamesCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <img class="card-img-top" src="images/toguzKorgool.gif" alt="Card image cap">
 
                     <div class="card-body">
@@ -377,12 +384,12 @@
 
                         <a href="https://github.com/pranavsetty/ToguzKorgool" class="card-link">Link</a>
                     </div>
-                <!--</div>-->
-            </div>
+                    <!--</div>-->
+                </div>
 
 
-            <!--<div data-aos="flip-up">-->
-                <div class="card card1 websitesCard" style="width: 30rem;">
+                <!--<div data-aos="flip-up">-->
+                <div class="card card1 websitesCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <div class="card-body">
                         <img class="card-img-top" src="images/Blockchain%20-%20Website.png" alt="Card image cap">
 
@@ -396,12 +403,12 @@
                         <a href="https://www.pranavbheemsetty.com/KCL-Blockchain-Website1/" class="card-link"> Link</a>
                     </div>
                 </div>
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 gamesCard" style="width: 30rem;">
+                <div class="card card1 gamesCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <div class="card-body">
                         <img class="card-img-top" src="images/Gladiators.png" alt="Card image cap">
 
@@ -415,12 +422,12 @@
                            class="card-link">Report</a>
                     </div>
                 </div>
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 guiCards" style="width: 30rem;">
+                <div class="card card1 guiCards" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <div class="card-body">
                         <img class="card-img-top" src="images/Simulation.jpg" alt="Card image cap">
 
@@ -437,12 +444,12 @@
                     </div>
                 </div>
 
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 guiCards" style="width: 30rem;">
+                <div class="card card1 guiCards" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <div class="card-body">
                         <img class="card-img-top" src="images/Property-Marketplace.png" alt="Card image cap">
 
@@ -460,12 +467,12 @@
                            class="card-link">Report</a>
                     </div>
                 </div>
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 othersCard" style="width: 30rem;">
+                <div class="card card1 othersCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <div class="card-body">
                         <img class="card-img-top" src="images/Smart-Contract.png" alt="Card image cap">
 
@@ -479,12 +486,12 @@
                         <a href="#" class="card-link">Report</a>
                     </div>
                 </div>
-            <!--</div>-->
+                <!--</div>-->
 
 
-            <!--<div data-aos="flip-up">-->
+                <!--<div data-aos="flip-up">-->
 
-                <div class="card card1 websitesCard" style="width: 30rem;">
+                <div class="card card1 websitesCard" style="width: 30rem;" data-stellar-background-ratio="0.5">
                     <div class="card-body">
                         <img class="card-img-top" src="images/Beauty%20Saloon.png" alt="Card image cap">
 
@@ -499,265 +506,11 @@
                 </div>
             </div>
 
-        <!--</div>-->
+            <!--</div>-->
 
-
-        <!--<div class="row">-->
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-
-        <!--<div data-aos="fade-up-right">-->
-
-        <!--<div class="card card1 appDesignsCard" style="width: 30rem;">-->
-        <!--<img class="card-img-top gif" src="images/StrArt.gif" alt="Card image cap">-->
-
-        <!--<div class="card-body">-->
-        <!--<h5 class="card-title">STRART (Initial Design)</h5>-->
-        <!--<p class="card-text">-->
-        <!--<p> •StrtArt is a “gallery-style” app that showcases street artist’s work.-->
-        <!--</p>-->
-
-        <!--<p> •The app uses tokens powered by Blockchain technology in order to establish the-->
-        <!--authenticity of art.-->
-        <!--</p>-->
-
-        <!--<a href="https://www.dropbox.com/s/b1mfrcfjjbeqtyl/STRART%20%281%29.mp4?dl=0"-->
-        <!--class="card-link">Link</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-
-        <!--<div data-aos="fade-up">-->
-
-        <!--<div class="card card1 otherCard" style="width: 30rem;">-->
-        <!--<img class="card-img-top" src="images/XYEZ.png" alt="Card image cap">-->
-
-        <!--<div class="card-body">-->
-        <!--<h5 class="card-title">XYEZ - (Report)</h5>-->
-        <!--<p class="card-text">-->
-
-        <!--<p>• Analyzes the communication clashes between two generations, namely generation ‘X’ and-->
-        <!--‘Y’-->
-        <!--in a workplace environment.</p>-->
-
-        <!--<p>• Examines three main factors - job satisfaction , professionalism, and work-->
-        <!--cohesion.</p>-->
-        <!--<a href="https://www.pranavbheemsetty.com/XYEZ/" class="card-link">Link</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-
-        <!--<div data-aos="fade-up-right">-->
-
-        <!--<div class="card card1 websitesCard" style="width: 30rem;">-->
-        <!--<img class="card-img-top" src="images/gameSoc.gif" alt="Card image cap">-->
-
-        <!--<div class="card-body">-->
-        <!--<h5 class="card-title">Game Society Web Application</h5>-->
-        <!--<p class="card-text">-->
-        <!--<p> • A web application, made for The Computer Gaming Society allows for the public to view,-->
-        <!--search and filter current available games and also allows the staff to login in and-->
-        <!--manage rentals, game records and members.-->
-
-        <!--</p>-->
-
-        <!--<p> •This project was made according with the implementation of LAMP stack.-->
-        <!--</p>-->
-        <!--<a href="http://seg-lab2018-omega.dx.am/public/" class="card-link">Link</a>-->
-        <!--<br><br><br><br><br>-->
-
-
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-
-        <!--<div data-aos="fade-up">-->
-
-        <!--<div class="card card1 gamesCard" style="width: 30rem;">-->
-        <!--<img class="card-img-top" src="images/toguzKorgool.gif" alt="Card image cap">-->
-
-        <!--<div class="card-body">-->
-        <!--<h5 class="card-title">Toguz Korgool (Game)</h5>-->
-        <!--<p class="card-text">-->
-
-        <!--<p>•A single player version of Toguz Korgool that aims to help players practice the-->
-        <!--game.</p>-->
-
-
-        <!--<p>• The application includes means to set up starting board positions that deviate from the-->
-        <!--normal start of the game </p>-->
-        <!--<p>• Created using the Gloun Scene Builder & Java Fx framework </p>-->
-
-        <!--<a href="https://github.com/pranavsetty/ToguzKorgool" class="card-link">Link</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-        <!--<div data-aos="fade-up-right">-->
-        <!--<div class="card card1 websitesCard" style="width: 30rem;">-->
-        <!--<div class="card-body">-->
-        <!--<img class="card-img-top" src="images/Blockchain%20-%20Website.png" alt="Card image cap">-->
-
-        <!--<h5 class="card-title">KCL Blockchain Website</h5>-->
-        <!--<p class="card-text">-->
-        <!--<p>• Currently building the KCL Blockchain Society website from scratch along-->
-        <!--with other peers.</p>-->
-
-        <!--<p>• Aim to make it a fundamental resource for University students in London</p>-->
-
-        <!--<a href="https://www.pranavbheemsetty.com/KCL-Blockchain-Website1/" class="card-link"> Link</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-        <!--<div data-aos="fade-up">-->
-
-        <!--<div class="card card1 gamesCard" style="width: 30rem;">-->
-        <!--<div class="card-body">-->
-        <!--<img class="card-img-top" src="images/Gladiators.png" alt="Card image cap">-->
-
-        <!--<h5 class="card-title">Age of Gladiators</h5>-->
-        <!--<p class="card-text">-->
-        <!--<p>• Developed a vintage adventurous text - based java game via BlueJ environment.</p>-->
-        <!--<p> • The current version is still in beta. Additional features to be added soon </p>-->
-
-        <!--<a href="https://github.com/pranavsetty/Age-of-Gladiators" class="card-link">Link</a>-->
-        <!--<a href="https://github.com/pranavsetty/Age-of-Gladiators/blob/master/Age%20of%20Gladiators%20-%20Report.pdf"-->
-        <!--class="card-link">Report</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-        <!--<div data-aos="fade-up-right">-->
-
-        <!--<div class="card card1 guiCard" style="width: 30rem;">-->
-        <!--<div class="card-body">-->
-        <!--<img class="card-img-top" src="images/Simulation.jpg" alt="Card image cap">-->
-
-        <!--<h5 class="card-title">Predator/Prey Simulation</h5>-->
-        <!--<p class="card-text">-->
-        <!--<p> • A simulation of a wildlife ecosystem between various species of animals (i.e dinosaurs-->
-        <!--)-->
-        <!--and its surroundings. </p>-->
-        <!--<p> • Created using the Java Swing framework</p>-->
-
-
-        <!--<a href="https://github.com/pranavsetty/DinosaurSimulation" class="card-link">Link</a>-->
-        <!--<a href="https://www.dropbox.com/s/lcd8awn44avve4n/Simulation%20Report%20.pdf?dl=0"-->
-        <!--class="card-link">Report</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-        <!--<div data-aos="fade-up">-->
-
-        <!--<div class="card card1 guiCard" style="width: 30rem;">-->
-        <!--<div class="card-body">-->
-        <!--<img class="card-img-top" src="images/Property-Marketplace.png" alt="Card image cap">-->
-
-        <!--<h5 class="card-title">Property Marketplace (Visualizer)</h5>-->
-        <!--<p class="card-text">-->
-
-        <!--<p> • Created a Graphical User Interface (GUI) for exploring properties that are available-->
-        <!--for-->
-        <!--temporary rental in London. </p>-->
-        <!--<p> • Used a real world dataset from Airbnb</p>-->
-
-        <!--<a href="https://github.com/pranavsetty/London-Property-Marketplace-"-->
-        <!--class="card-link">Link</a>-->
-        <!--<a href="https://github.com/pranavsetty/London-Property-Marketplace-/blob/master/Project%20Report.pdf"-->
-        <!--class="card-link">Report</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-        <!--<div data-aos="fade-up-right">-->
-
-        <!--<div class="card card1 otherCard" style="width: 30rem;">-->
-        <!--<div class="card-body">-->
-        <!--<img class="card-img-top" src="images/Smart-Contract.png" alt="Card image cap">-->
-
-        <!--<h5 class="card-title">Coming Soon</h5>-->
-        <!--<p class="card-text"> • Currently developing a smart contract based application using the-->
-        <!--Ethereum Blockchain network</p>-->
-        <!--<p>• To be updated soon !</p>-->
-
-
-        <!--<a href="#" class="card-link">Link</a>-->
-        <!--<a href="#" class="card-link">Report</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-        <!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">-->
-
-        <!--<div data-aos="fade-up">-->
-
-        <!--<div class="card card1 websitesCard" style="width: 30rem;">-->
-        <!--<div class="card-body">-->
-        <!--<img class="card-img-top" src="images/Beauty%20Saloon.png" alt="Card image cap">-->
-
-        <!--<h5 class="card-title">Beauty Saloon</h5>-->
-        <!--<p class="card-text"> • Created a static website for a rising beauty saloon at a-->
-        <!--Metropolitan city.</p>-->
-        <!--<p>• Included a booking system as well to increase customer engagement. </p>-->
-
-
-        <!--<a href="https://www.chitrasbeautyparlour.com/" class="card-link">Link</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-
-        <!--</div>-->
+        </div>
     </div>
 </div>
-
 <!-- End of Projects section -->
 
 
@@ -796,34 +549,36 @@
                  style="width: 90%"
                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JavaScript
             </div>
-        </div></div>
-
-    <div data-aos="fade-up"> <div class="progress" style="height: 25px;">
-        <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar"
-             style="width: 95%"
-             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">HTML, CSS
         </div>
-    </div></div>
+    </div>
 
-    <div data-aos="fade-up"><div class="progress" style="height: 25px;">
-        <div class="progress-bar progress-bar-animated  progress-bar-striped bg-warning" role="progressbar"
-             style="width: 90%"
-             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">MySql
+    <div data-aos="fade-up">
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar"
+                 style="width: 95%"
+                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">HTML, CSS
+            </div>
         </div>
-    </div></div>
+    </div>
 
-
-    <div data-aos="fade-up"><div class="progress" style="height: 25px;">
-        <div class="progress-bar  progress-bar-animated progress-bar-striped bg-danger" role="progressbar"
-             style="width: 75%"
-             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> Adobe Photoshop, InDesign, Illustrator
+    <div data-aos="fade-up">
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar progress-bar-animated  progress-bar-striped bg-warning" role="progressbar"
+                 style="width: 90%"
+                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">MySql
+            </div>
         </div>
-    </div></div>
+    </div>
 
 
-
-
-
+    <div data-aos="fade-up">
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar  progress-bar-animated progress-bar-striped bg-danger" role="progressbar"
+                 style="width: 75%"
+                 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> Adobe Photoshop, InDesign, Illustrator
+            </div>
+        </div>
+    </div>
 
 
     <h2> Tools & Frameworks </h2>
