@@ -141,6 +141,13 @@ hr{
 
 /**{ border: 0.1px solid red; }*/
 
+.testRow{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+
+}
+
 
 .categories{
     display: flex;
