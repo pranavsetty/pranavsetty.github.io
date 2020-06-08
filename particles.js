@@ -55,7 +55,7 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
-        value: 10,
+        value: 20,
         random: false,
         anim: {
           enable: false,
@@ -109,7 +109,7 @@ var pJS = function(tag_id, params){
         },
         bubble:{
           distance: 200,
-          size: 50,
+          size: 80,
           duration: 0.4
         },
         repulse:{
